@@ -1,5 +1,6 @@
 
 import java.util.List;
+import java.util.Scanner;
 
 public class Assignment3 {
     public static Integer listSum(List<Integer> nums) {
@@ -20,5 +21,18 @@ public class Assignment3 {
         }
 
         return product;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("How many numbers would you like to enter?");
+        Integer numCount = scanner.nextInt();
+
+        System.out.println("Please enter " + numCount + " numbers - one at a time:");
+        List<Integer> nums = List.of(scanner.nextInt());
+
+        System.out.println("Sum: " + listSum(nums));
+        System.out.println("Product: " + listProduct(nums));
     }
 }
