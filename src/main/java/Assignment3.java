@@ -11,4 +11,14 @@ public class Assignment3 {
 
         return sum;
     }
+
+    public static Integer listProduct(List<Integer> nums) {
+        Integer product = 1;
+
+        for (Integer num : nums) {
+            product *= num;
+        }
+
+        return product;
+    }
 }
