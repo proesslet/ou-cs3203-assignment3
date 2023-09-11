@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -21,6 +22,16 @@ public class Assignment3 {
         }
 
         return product;
+    }
+
+    public static List<Integer> reverseList(List<Integer> nums) {
+        List<Integer> reversed = new ArrayList<>();
+
+        for (int i = nums.size() - 1; i >= 0; i--) {
+            reversed.add(nums.get(i));
+        }
+
+        return reversed;
     }
 
     public static void main(String[] args) {
