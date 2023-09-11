@@ -45,5 +45,6 @@ public class Assignment3 {
 
         System.out.println("Sum: " + listSum(nums));
         System.out.println("Product: " + listProduct(nums));
+        System.out.println("Reversed: " + reverseList(nums));
     }
 }
